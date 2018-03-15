@@ -20,7 +20,7 @@ def create(request):
     if request.method == 'POST':
 
         title_search = request.POST.get('name')
-        api_url = 'http://www.omdbapi.com/?apikey=68b4a57a&t='
+        api_url = 'http://www.omdbapi.com/?apikey=xxxxxxxx&t='
         api_title_search_url = api_url + title_search
         response = urllib.request.urlopen(api_title_search_url)
         result_api = json.loads(response.read())
